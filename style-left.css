@@ -74,6 +74,7 @@ img {
 }
 .primary-btn:hover::after {
   background-color: #ff8bae;
+  transition-duration: 1s;
 }
 .primary-btn::after {
   content: "";
@@ -282,6 +283,8 @@ img {
   letter-spacing: -0.2px;
   text-decoration: none;
   color: #000;
+  border: none;
+  background-color: transparent;
 }
 .languages-list__link:hover {
   color: #7e7e82;
