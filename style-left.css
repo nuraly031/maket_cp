@@ -222,6 +222,7 @@ img {
   text-decoration: none;
   color: #000;
   border: 4px solid transparent;
+  transition-duration: 300ms;
 }
 @media screen and (min-width: 1120px) {
   .dropdown-navigation__link {
