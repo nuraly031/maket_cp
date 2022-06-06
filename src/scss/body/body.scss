@@ -1,0 +1,12 @@
+.body {
+  background-color: $main-color;
+
+  &__wrap {
+
+    @media (min-width: 1440px) {
+      display: flex;
+      margin: auto;
+      max-width: 1440px;
+    }
+  }
+}

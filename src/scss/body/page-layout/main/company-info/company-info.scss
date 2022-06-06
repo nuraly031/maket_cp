@@ -1,0 +1,113 @@
+.company-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  &__paragraph {
+    font-family: TTLakes, sans-serif;
+    font-size: $font-size-secondary;
+    line-height: 18px;
+  }
+
+  &__text {
+    max-width: 312px;
+    margin-left: 16px;
+    margin-right: 16px;
+
+    @media (min-width: 768px) {
+      margin-left: 24px;
+    }
+
+    @media (min-width: 1120px) {
+      margin-left: 32px;
+      max-width: 490px;
+    }
+
+    &--hidden {
+      max-height: 110px;
+      overflow: hidden;
+
+      @media (min-width: 768px) {
+        max-height: 125px;
+      }
+
+      @media (min-width: 1120px) {
+        max-height: 143px;
+      }
+    }
+  }
+
+  &__button-more {
+    background-color: transparent;
+    border: none;
+    font-family: TTLakes-Medium, sans-serif;
+    font-size: $font-size-main;
+    line-height: 24px;
+    margin-left: 16px;
+    margin-bottom: 16px;
+    cursor: pointer;
+    outline: none;
+    transition: 500ms;
+
+    @media (min-width: 768px) {
+      margin-top: 10px;
+    }
+
+    @media (min-width: 1120px) {
+      margin-left: 32px;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    &::before {
+      display: block;
+      content: "";
+      float: left;
+      background-image: url("../img/expand.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 24px;
+      height: 24px;
+    }
+
+    &--rotate {
+      &::before {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &__image {
+    flex-grow: 1;
+    max-width: 531px;
+    max-height: 307px;
+    min-height: 176px;
+    margin-bottom: 16px;
+
+    @media (min-width: 768px) {
+      margin-right: 24px;
+      max-width: 360px;
+      margin-bottom: 32px;
+    }
+
+    @media (min-width: 1120px) {
+      max-width: 531px;
+      margin-bottom: 51px;
+    }
+  }
+
+  &__cps-image {
+    width: 100%;
+
+    @media (min-width: 768px) {
+      border-radius: 6px;
+    }
+  }
+}

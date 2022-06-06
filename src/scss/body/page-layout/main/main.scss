@@ -1,0 +1,130 @@
+.main {
+  background-color: $secondary-color;
+  position: relative;
+
+  &__title {
+    font-family: TTLakes-Bold, sans-serif;
+    letter-spacing: -0.6px;
+    line-height: 40px;
+    font-size: 28px;
+    margin-left: 16px;
+
+    @media (min-width: 768px) {
+      margin-left: 24px;
+    }
+
+    @media (min-width: 1120px) {
+      display: inline-block;
+      margin-left: 32px;
+    }
+
+    &::before {
+      display: block;
+      position: absolute;
+      content: "";
+      background-image: url("../img/highlight.svg");
+      width: 4px;
+      height: 40px;
+      left: 0;
+    }
+  }
+
+  &__menu {
+    list-style: none;
+    overflow: auto;
+    white-space: nowrap;
+    margin-left: 16px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+
+    @media (min-width: 768px) {
+      margin-left: 24px;
+    }
+
+    @media (min-width: 1120px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: 32px;
+    }
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 24px;
+      height: 40px;
+      background: linear-gradient(
+        270deg,
+        #f8f8f8 16.84%,
+        rgba(248, 248, 248, 0.0001) 100%
+      );
+      top: 0;
+      right: 0;
+    }
+  }
+
+  &__menu-wrap {
+    position: relative;
+  }
+
+  &__menu-link {
+    text-decoration: none;
+    color: $text-color-secondary;
+    font-family: TTLakes-Medium, sans-serif;
+    font-size: $font-size-main;
+    transition: 300ms;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__menu-item {
+    display: inline-block;
+    padding: 8px 16px;
+
+    &:first-child {
+      border: 2px solid #b8ffec;
+      border-radius: 6px;
+      background-color: white;
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title-link {
+    display: flex;
+    align-items: center;
+    font-family: TTLakes-Medium, sans-serif;
+    font-size: $font-size-main;
+    line-height: 24px;
+    color: $text-color-main;
+    text-decoration: none;
+    transition: 500ms;
+
+    &:first-child {
+      margin-right: 32px;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__buttons-wrap {
+    display: none;
+    margin-right: 32px;
+
+    @media (min-width: 1120px) {
+      display: flex;
+    }
+  }
+}

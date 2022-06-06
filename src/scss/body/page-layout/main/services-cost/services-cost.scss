@@ -1,0 +1,266 @@
+.services-cost {
+  background-color: $secondary-color;
+
+  &__header {
+    background: linear-gradient(270deg, #ffffff 0%, #f8f8f8 98.61%);
+    border-top: 1px solid #d9fff5;
+    height: 80px;
+    margin-bottom: 16px;
+
+    @media (min-width: 768px) {
+      height: 56px;
+      margin-bottom: 8px;
+    }
+  }
+
+  &__title {
+    font-family: TTLakes, sans-serif;
+    font-size: $font-size-main;
+    color: $text-color-secondary;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin: 16px;
+
+    @media (min-width: 768px) {
+      margin-left: 24px;
+    }
+
+    @media (min-width: 1120px) {
+      margin-left: 32px;
+    }
+  }
+
+  &__swiper-slide {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $main-color;
+    width: 260px;
+    height: 200px;
+    border: 1px solid #eaeaea;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 300ms;
+
+    @media (min-width: 768px) {
+      width: 690px;
+      height: 32px;
+      flex-wrap: nowrap;
+      align-items: center;
+      padding: 16px;
+
+      &:first-child .services-cost__text::before {
+        display: block;
+        position: absolute;
+        top: -35px;
+      }
+    }
+
+    @media (min-width: 1120px) {
+      width: 1020px;
+    }
+
+    &:last-child {
+      margin-right: 32px;
+    }
+
+    &:hover {
+      border: 1px solid black;
+    }
+  }
+
+  &__swiper-wrapper {
+    margin-left: 16px;
+
+    @media (min-width: 768px) {
+      flex-wrap: wrap;
+      margin-left: 24px;
+    }
+
+    @media (min-width: 1120px) {
+      margin-left: 32px;
+    }
+
+    &--hidden {
+      max-height: 180px;
+    }
+  }
+
+  &__swiper-container {
+    position: relative;
+    table-layout: fixed;
+
+    @media (min-width: 768px) {
+      padding-top: 42px;
+    }
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+
+    &::after {
+      background: linear-gradient(
+        270deg,
+        #f8f8f8 16.84%,
+        rgba(248, 248, 248, 0.0001) 100%
+      );
+      content: "";
+      display: block;
+      position: absolute;
+      width: 24px;
+      height: 200px;
+      right: 0;
+      top: 0;
+      z-index: 1;
+    }
+  }
+
+  &__swiper-button {
+    width: 119px;
+    height: 32px;
+    font-family: TTLakes-Medium, sans-serif;
+    font-size: 12px;
+    color: $main-color;
+    text-transform: uppercase;
+    border: 1px solid #ff3e79;
+    border-radius: 32px;
+    cursor: pointer;
+    background-color: #ff3e79;
+    margin: auto 16px 12px auto;
+    transition: 500ms;
+
+    @media (min-width: 768px) {
+      margin: 0 16px 0 auto;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__pagination {
+    width: 330px;
+    position: static;
+    margin-top: 16px;
+    margin-bottom: 16px;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__text {
+    font-family: TTLakes, sans-serif;
+    font-size: $font-size-secondary;
+    line-height: 18px;
+    margin: 16px 16px 0 16px;
+    align-self: flex-start;
+    width: 100%;
+
+    @media (min-width: 768px) {
+      margin: auto 0;
+    }
+
+    &::before {
+      display: block;
+
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
+  }
+
+  &__text-description {
+    @media (min-width: 768px) {
+      flex-basis: 95%;
+    }
+
+    &::before {
+      color: $text-color-secondary;
+      content: "Ремонтные услуги";
+    }
+  }
+
+  &__text-cost {
+    @media (min-width: 768px) {
+      flex-basis: 45%;
+    }
+
+    &::before {
+      color: $text-color-secondary;
+      content: "Цена";
+    }
+  }
+
+  &__text-duration {
+    width: 35%;
+
+    &::before {
+      color: $text-color-secondary;
+      content: "Срок";
+    }
+  }
+
+  &__table-wrap {
+    overflow: hidden;
+  }
+
+  &__wrap {
+    display: flex;
+    flex-wrap: nowrap;
+
+    @media (min-width: 768px) {
+      flex-basis: 35%;
+    }
+  }
+
+  &__info-text {
+    font-family: TTLakes, sans-serif;
+    font-size: $font-size-secondary;
+    line-height: 20px;
+    margin: 16px;
+
+    @media (min-width: 768px) {
+      margin: 24px;
+      width: 421px;
+    }
+
+    @media (min-width: 1120px) {
+      margin: 32px 32px 16px;
+    }
+  }
+
+  &__commercial-offer {
+    display: block;
+    font-family: TTLakes-Medium, sans-serif;
+    font-size: $font-size-main;
+    line-height: 24px;
+    color: $text-color-main;
+    text-decoration: none;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 40px;
+    transition: 300ms;
+
+    @media (min-width: 768px) {
+      margin: 16px 24px 48px;
+    }
+
+    @media (min-width: 1120px) {
+      margin: 16px 32px 50px;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &::after {
+      display: inline-block;
+      background-image: url("../img/more.svg");
+      content: "";
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 24px;
+      height: 12px;
+    }
+  }
+}
