@@ -1,6 +1,10 @@
 .services-cost {
   background-color: $secondary-color;
 
+  &__slide--button {
+    vertical-align: middle;
+    text-align: center;
+  }
   &__header {
     background: linear-gradient(270deg, #ffffff 0%, #f8f8f8 98.61%);
     border-top: 1px solid #d9fff5;
@@ -73,6 +77,7 @@
 
     @media (min-width: 768px) {
       flex-wrap: wrap;
+      justify-content: space-around;
       margin-left: 24px;
     }
 
@@ -138,8 +143,11 @@
   }
 
   &__pagination {
+    display: inline-block;
     width: 330px;
     position: static;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 16px;
     margin-bottom: 16px;
 
