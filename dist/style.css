@@ -620,6 +620,7 @@ html {
 }
 @media (min-width: 1440px) {
   .body__wrap {
+    position: relative;
     display: flex;
     margin: auto;
     max-width: 1440px;
@@ -669,7 +670,7 @@ html {
   }
 }
 .mobile-menu__logo {
-  background-image: url(img/Group.eddc4c01435ca44eb410.png);
+  /** background-image: url("../img/Group.png"); **/
   width: 98px;
   height: 52px;
   transition: 500ms;
@@ -1091,7 +1092,7 @@ html {
   line-height: 18px;
 }
 .company-info__text {
-  max-width: 312px;
+  max-width: 768px;
   margin-left: 16px;
   margin-right: 16px;
 }
@@ -1164,11 +1165,13 @@ html {
   max-height: 307px;
   min-height: 176px;
   margin-bottom: 16px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (min-width: 768px) {
   .company-info__image {
     margin-right: 24px;
-    max-width: 360px;
+    max-width: 500px;
     margin-bottom: 32px;
   }
 }
@@ -1179,6 +1182,10 @@ html {
   }
 }
 .company-info__cps-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 6px;
   width: 100%;
 }
 @media (min-width: 768px) {
@@ -1337,6 +1344,7 @@ html {
 @media (min-width: 768px) {
   .repair-brands__swiper-wrapper {
     flex-wrap: wrap;
+    justify-content: space-around;
     margin-left: 24px;
   }
 }
@@ -1498,6 +1506,7 @@ html {
 @media (min-width: 768px) {
   .repair-technics__swiper-wrapper {
     flex-wrap: wrap;
+    justify-content: space-around;
     margin-left: 24px;
   }
 }
@@ -1557,6 +1566,10 @@ html {
 
 .services-cost {
   background-color: #F8F8F8;
+}
+.services-cost__slide--button {
+  vertical-align: middle;
+  text-align: center;
 }
 .services-cost__header {
   background: linear-gradient(270deg, #ffffff 0%, #f8f8f8 98.61%);
@@ -1630,6 +1643,7 @@ html {
 @media (min-width: 768px) {
   .services-cost__swiper-wrapper {
     flex-wrap: wrap;
+    justify-content: space-around;
     margin-left: 24px;
   }
 }
@@ -1689,8 +1703,11 @@ html {
   transform: scale(1.1);
 }
 .services-cost__pagination {
+  display: inline-block;
   width: 330px;
   position: static;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 16px;
   margin-bottom: 16px;
 }

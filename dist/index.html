@@ -13,7 +13,9 @@
         <div class="mobile-menu__container">
           <div class="mobile-button-link mobile-menu__header">
             <button class="mobile-button-link__btn mobile-button-link__btn--close" type="button"></button>
-            <a href="#" class="mobile-menu__logo"></a>
+            <a href="#">
+              <img class="mobile-menu__logo" src="./img/logo.svg" alt="Логотип">
+            </a>
             <button class="mobile-button-link__btn mobile-button-link__btn--search" type="button"></button>
           </div>
           <ul class="mobile-menu__list">
@@ -49,8 +51,8 @@
               <button class="mobile-button-link__btn mobile-button-link__btn--profile" type="button"></button>
             </div>
             <div class="mobile-menu__feedback">
-              <a class="mobile-menu__mail-link" href="#">mail@cps.com</a>
-              <a class="mobile-menu__phone-link" href="#">8 800 890 8900</a>
+              <a class="mobile-menu__mail-link" href="mailto:mail@cps.com">mail@cps.com</a>
+              <a class="mobile-menu__phone-link" href="tel:88008908000">8 800 890 8900</a>
             </div>
             <div class="mobile-menu__language">
               <button class="mobile-menu__language-btn mobile-menu__language-btn--active" type="button">
@@ -92,7 +94,7 @@
               </a>
             </div>
           </div>
-          <div class="main__menu-wrap">
+          <nav class="main__menu-wrap">
             <ul class="main__menu">
               <li class="main__menu-item">
                 <a href="#" class="main__menu-link">Ремонтируемые устройства</a>
@@ -113,7 +115,7 @@
                 <a href="#" class="main__menu-link">Отзывы</a>
               </li>
             </ul>
-          </div>
+          </nav>
           <div class="main__content company-info">
             <div class="company-info__wrap">
               <div class="company-info__text company-info__text--hidden">
@@ -150,9 +152,9 @@
           </div>
           <div class="repair-brands">
             <div class="repair-brands__header">
-              <h1 class="repair-brands__title">
+              <h2 class="repair-brands__title">
                 ремонт техники различных брендов
-              </h1>
+              </h2>
             </div>
             <div class="swiper-container repair-brands__swiper-container">
               <div class="swiper-wrapper repair-brands__swiper-wrapper repair-brands__swiper-wrapper--hidden">
@@ -231,9 +233,9 @@
           </div>
           <div class="repair-technics">
             <div class="repair-technics__header">
-              <h1 class="repair-technics__title">
+              <h2 class="repair-technics__title">
                 ремонт различных видов техники
-              </h1>
+              </h2>
             </div>
             <div class="swiper-container repair-technics__swiper-container">
               <div class="swiper-wrapper repair-technics__swiper-wrapper repair-technics__swiper-wrapper--hidden">
@@ -284,7 +286,7 @@
           </div>
           <div class="services-cost">
             <div class="services-cost__header">
-              <h1 class="services-cost__title">цены на услуги</h1>
+              <h2 class="services-cost__title">цены на услуги</h2>
             </div>
             <div class="services-cost__table-wrap">
               <table class="swiper-container services-cost__swiper-container">
@@ -374,14 +376,16 @@
                     </td>
                   </tr>
                 </tbody>
+
                 <tfoot>
                   <tr>
-                    <td>
-                      <div class="swiper-pagination services-cost__pagination"></div>
+                    <td class="services-cost__slide--button">
+                      <span class="swiper-pagination services-cost__pagination"></span>
                     </td>
                   </tr>
                 </tfoot>
               </table>
+
               <div class="services-cost__info">
                 <p class="services-cost__info-text">
                   Все цены указаны с учетом НДС. Стоимость ремонта указана на
@@ -412,10 +416,10 @@
       <div class="modal-feedback modal-feedback--hidden" tabindex="-1">
         <div class="modal-feedback__wrap">
           <button class="modal-feedback__btn modal-feedback__btn--close" type="button"></button>
-          <h1 class="modal-feedback__title">Обратная связь</h1>
+          <h2 class="modal-feedback__title">Обратная связь</h2>
           <form class="modal-feedback__form">
             <input class="modal-feedback__input" type="text" placeholder="Имя">
-            <input class="modal-feedback__input" type="number" placeholder="Телефон">
+            <input class="modal-feedback__input" type="tel" placeholder="Телефон">
             <input class="modal-feedback__input" type="email" placeholder="Электронная почта">
             <textarea class="modal-feedback__message-input" name="message" placeholder="Сообщение"></textarea>
             <p class="modal-feedback__agreement-text">
@@ -433,9 +437,9 @@
       <div class="modal-call modal-call--hidden" tabindex="-1">
         <div class="modal-call__wrap">
           <button class="modal-call__btn modal-call__btn--close" type="button"></button>
-          <h1 class="modal-call__title">Заказать звонок</h1>
+          <h2 class="modal-call__title">Заказать звонок</h2>
           <form class="modal-call__form">
-            <input class="modal-call__input" type="number" placeholder="Телефон">
+            <input class="modal-call__input" type="tel" placeholder="Телефон">
             <p class="modal-call__agreement-text">
               Нажимая “отправить”, вы даете согласие на
               <a class="modal-call__text-link" href="#">обработку персональных данных</a>
